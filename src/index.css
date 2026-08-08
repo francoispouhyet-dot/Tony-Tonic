@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #0c0a09; /* stone-950 */
+  color: #f5f5f4;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+body {
+  padding-top: env(safe-area-inset-top);
+}
+
+/* Champs numériques : gros, clavier numérique mobile */
+input,
+select,
+textarea {
+  font-size: 16px; /* évite le zoom iOS au focus */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.markdown h3 {
+  font-weight: 700;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+.markdown ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0.25rem 0;
+}
+.markdown p {
+  margin: 0.35rem 0;
+}
+.markdown strong {
+  color: #fdba74;
+}
