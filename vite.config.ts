@@ -4,6 +4,9 @@ import tailwindcss from "@tailwindcss/vite";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
+  // GitHub Pages sert l'app sous /Tony-Tonic/ — la CI définit BASE_PATH.
+  // En local (dev ou preview), la base reste "/".
+  base: process.env.BASE_PATH || "/",
   plugins: [
     react(),
     tailwindcss(),
