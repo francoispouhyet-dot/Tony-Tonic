@@ -5,6 +5,12 @@ Application personnelle de suivi **fitness, nutrition et santé**. PWA mobile-fi
 aucun serveur, aucun cloud. Seule exception : les fonctions IA appellent l'API Anthropic
 (optionnelles, jamais un prérequis).
 
+## App en ligne
+
+➡️ **https://francoispouhyet-dot.github.io/Tony-Tonic/** (déployée automatiquement par
+GitHub Actions sur la branche `gh-pages` à chaque push). Les données restent locales à
+chaque appareil/navigateur : le site n'est qu'un livreur de fichiers statiques.
+
 ## Lancer l'app
 
 ```bash
